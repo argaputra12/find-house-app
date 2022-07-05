@@ -283,13 +283,15 @@ class _DetailPageState extends State<DetailPage> {
                         ),
                         height: 50,
                         width: MediaQuery.of(context).size.width - (2 * edge),
-                        child: FlatButton(
+                        child: TextButton(
                           onPressed: () {
                             handleBook(widget.space);
                           },
-                          color: purpleColor,
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(17),
+                            style: TextButton.styleFrom(
+                              primary: purpleColor,
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(17),
+                            ),
                           ),
                           child: Text(
                             'Book Now',
