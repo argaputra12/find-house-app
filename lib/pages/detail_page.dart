@@ -283,11 +283,11 @@ class _DetailPageState extends State<DetailPage> {
                         ),
                         height: 50,
                         width: MediaQuery.of(context).size.width - (2 * edge),
-                        child: TextButton(
+                        child: ElevatedButton(
                           onPressed: () {
                             handleBook(widget.space);
                           },
-                            style: TextButton.styleFrom(
+                            style: ElevatedButton.styleFrom(
                               primary: purpleColor,
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(17),

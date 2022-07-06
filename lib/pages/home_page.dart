@@ -40,7 +40,7 @@ class HomePage extends StatelessWidget {
             Padding(
               padding: EdgeInsets.only(left: edge),
               child: Text(
-                'Mencari kosan yang cozy',
+                'Mencari tempat tinggal yang nyaman',
                 style: greyTextStyle.copyWith(
                   fontSize: 16,
                 ),
@@ -53,7 +53,7 @@ class HomePage extends StatelessWidget {
             Padding(
               padding: EdgeInsets.only(left: edge),
               child: Text(
-                'Popular Cities',
+                'Kota terpopuler',
                 style: regularTextStyle.copyWith(
                   fontSize: 16,
                 ),
@@ -70,7 +70,7 @@ class HomePage extends StatelessWidget {
                   SizedBox(
                     width: 24,
                   ),
-                  CityCard(
+                  CityCard( // NOTE: City Card
                     City(
                       id: 1,
                       name: 'Jakarta',
@@ -142,7 +142,7 @@ class HomePage extends StatelessWidget {
             Padding(
               padding: EdgeInsets.only(left: edge),
               child: Text(
-                'Recommended Space',
+                'Rekomendasi tempat tinggal',
                 style: regularTextStyle.copyWith(
                   fontSize: 16,
                 ),
@@ -156,7 +156,7 @@ class HomePage extends StatelessWidget {
                 horizontal: edge,
               ),
               child: FutureBuilder(
-                future: spaceProvider.getRecommendedSpaces(),
+                future: spaceProvider.getRecommendedSpaces(), // NOTE: Get Recommended Spaces
                 builder: (context, snapshot) {
                   if (snapshot.hasData) {
                     List<Space> data = snapshot.data;
@@ -170,7 +170,7 @@ class HomePage extends StatelessWidget {
                           margin: EdgeInsets.only(
                             top: index == 1 ? 0 : 30,
                           ),
-                          child: SpaceCard(item),
+                          child: SpaceCard(item), // NOTE: SPACE CARD
                         );
                       }).toList(),
                     );

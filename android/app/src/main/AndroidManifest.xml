@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.bwa_cozy">
    <application
-        android:label="bwa_cozy"
+        android:label="Find House App"
         android:icon="@mipmap/launcher_icon">
         <activity
             android:name=".MainActivity"

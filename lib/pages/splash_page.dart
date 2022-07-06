@@ -36,7 +36,7 @@ class SplashPage extends StatelessWidget {
                     height: 30,
                   ),
                   Text(
-                    'Find Cozy House\nto Stay and Happy',
+                    'Find your cozy house\nanywhere in the world',
                     style: blackTextStyle.copyWith(
                       fontSize: 24,
                     ),
@@ -45,7 +45,7 @@ class SplashPage extends StatelessWidget {
                     height: 10,
                   ),
                   Text(
-                    'Stop membuang banyak waktu\npada tempat yang tidak habitable',
+                    'Stop wasting your time\nwith bored places',
                     style: greyTextStyle.copyWith(
                       fontSize: 16,
                     ),
