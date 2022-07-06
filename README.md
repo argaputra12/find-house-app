@@ -1,4 +1,4 @@
-# bwa_cozy
+# Find House App
 
 A new Flutter project.
 
